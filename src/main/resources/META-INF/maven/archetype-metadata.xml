@@ -24,11 +24,30 @@ under the License.
   name="${artifactId}">
 
   <fileSets>
-    <fileSet filtered="true" packaged="true">
+    <fileSet filtered="true" packaged="false" encoding="UTF-8">
       <directory>src/main/java</directory>
+      <includes>
+          <include>**/*.java</include>
+      </includes>
     </fileSet>
-    <fileSet filtered="true" packaged="true">
+    <fileSet filtered="true" packaged="false" encoding="UTF-8">
       <directory>src/test/java</directory>
+      <includes>
+          <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="false" encoding="UTF-8">
+        <directory>src/main/webapp</directory>
+        <includes>
+            <include>**/*.xml</include>
+        </includes>
+    </fileSet>
+    <fileSet filtered="false" packaged="false" encoding="UTF-8">
+        <directory></directory>
+        <includes>
+            <include>.gitignore</include>
+            <include>README.md</include>
+        </includes>
     </fileSet>
   </fileSets>
 </archetype-descriptor>
