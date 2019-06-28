@@ -40,6 +40,7 @@ under the License.
         <directory>src/main/webapp</directory>
         <includes>
             <include>**/*.xml</include>
+            <include>**/*.html</include>
         </includes>
     </fileSet>
     <fileSet filtered="false" packaged="false" encoding="UTF-8">

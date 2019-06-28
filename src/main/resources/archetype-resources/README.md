@@ -1,2 +1,1 @@
-# webapp: $artifactId - version: $version
-hello world
+# hello world
