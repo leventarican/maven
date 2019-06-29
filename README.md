@@ -19,3 +19,30 @@ mvn archetype:generate -DarchetypeGroupId=com.github.leventarican -DarchetypeArt
 ```
 mvn test
 ```
+# app structure 
+```
+¦   .gitignore
+¦   pom.xml
+¦   README.md
+¦
++---src
+    +---main
+    ¦   +---java
+    ¦   ¦   +---com
+    ¦   ¦       +---github
+    ¦   ¦           +---leventarican
+    ¦   ¦                   ApiConfiguration.java
+    ¦   ¦
+    ¦   +---webapp
+    ¦       ¦   index.html
+    ¦       ¦
+    ¦       +---WEB-INF
+    ¦               beans.xml
+    ¦
+    +---test
+        +---java
+            +---com
+                +---github
+                    +---leventarican
+                            AppTest.java
+```
