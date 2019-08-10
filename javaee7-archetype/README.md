@@ -1,12 +1,12 @@
 # maven archetype for a java ee 7 web app
 * depedencies: java ee 7 and junit
 
-# based on
+## based on
 * https://maven.apache.org/archetypes/maven-archetype-archetype/
 * https://maven.apache.org/guides/mini/guide-creating-archetypes.html
 * https://github.com/AdamBien/javaee7-essentials-archetype
 
-# howto use
+## howto use
 1. git clone this maven project then install it to your local repository. later 'maybe' it will be available in remote maven repository.
 ```
 mvn install
@@ -19,7 +19,7 @@ mvn archetype:generate -DarchetypeGroupId=com.github.leventarican -DarchetypeArt
 ```
 mvn test
 ```
-# app structure 
+## app structure 
 ```
 ¦   .gitignore
 ¦   pom.xml
@@ -45,4 +45,37 @@ mvn test
                 +---github
                     +---leventarican
                             AppTest.java
+```
+
+## cheatsheet
+* list dependencies
+```
+mvn dependency:tree
+
+...
+[INFO] +- javax:javaee-api:jar:7.0:provided
+[INFO] |  \- com.sun.mail:javax.mail:jar:1.5.0:provided
+[INFO] |     \- javax.activation:activation:jar:1.1:compile
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+...
+```
+
+* show unused dependencies
+```
+mvn dependency:analyize
+
+...
+[INFO] --- maven-dependency-plugin:2.8:analyze (default-cli) @ dependencies-example ---
+[WARNING] Unused declared dependencies found:
+[WARNING]    junit:junit:jar:4.11:test
+[WARNING]    com.microsoft.azure:azure-core:jar:0.9.8:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+...
+```
+
+* show plugin help / info
+```
+mvn help:describe -Dplugin=clean
 ```
