@@ -8,19 +8,15 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.github.leventarican.maven</groupId>
   <artifactId>mod-core</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-
   <name>mod-core</name>
 
   <dependencies>
-      <dependency>
-        <groupId>com.github.leventarican.maven</groupId>
-        <artifactId>mod-utils</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <scope>compile</scope>
-      </dependency>
+    <dependency>
+      <groupId>com.github.leventarican.maven</groupId>
+      <artifactId>mod-utils</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
-
 </project>
