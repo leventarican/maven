@@ -9,8 +9,19 @@
         <version>0.0.1</version>
     </parent>
     
-    <name>100: snippet a</name>
+    <name>100: Apache Log4j 2</name>
     
     <artifactId>snippet-a</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

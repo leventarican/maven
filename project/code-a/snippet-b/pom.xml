@@ -5,18 +5,19 @@
     
     <parent>
         <groupId>com.github.leventarican</groupId>
-        <artifactId>project</artifactId>
+        <artifactId>code-a</artifactId>
         <version>0.0.1</version>
     </parent>
     
-    <artifactId>code-a</artifactId>
-    <packaging>pom</packaging>
-
-    <name>10: code a</name>
+    <name>200: Apache Avro</name>
     
-    <modules>
-        <module>snippet-a</module>
-        <module>snippet-b</module>
-    </modules>
+    <artifactId>snippet-b</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
