@@ -4,7 +4,7 @@
 
   <groupId>com.github.leventarican.maven</groupId>
   <artifactId>mod</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>pom</packaging>
 
   <name>mod</name>
@@ -12,13 +12,14 @@
   <modules>
     <module>mod-core</module>
     <module>mod-utils</module>
+    <!--<module>mod-math</module>-->
   </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <junit.version>4.11</junit.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <junit.version>4.13</junit.version>
   </properties>
 
   <dependencies>
